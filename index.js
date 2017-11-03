@@ -21,7 +21,7 @@ export default function EListener() {
     self.dataUpdated = function(fm) {
 		var i;
 		for(i = 0; i < self.onDataUpdatedListeners.length; ++i) {
-			self.onDataUpdatedListeners[i].fn(fm, self.onDataUpdatedListeners[i].name);
+			self.onDataUpdatedListeners[i].fn(fm);
 		}
     };
 }
